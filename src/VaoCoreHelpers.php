@@ -14,7 +14,7 @@ class VaoCoreHelpers
 
         $year = $includeYear ? Carbon::now()->year:null;
 
-        return $prefix.$year.$rand;
+        return $prefix.$year.$rand.'BEN';
     }
 
     public function generateActionsButton($data)
