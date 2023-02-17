@@ -30,29 +30,7 @@ class VaoCoreServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package
-            ->name('vao-core')
-            ->hasViewComponents('vao-core',
-                Alert::class,
-                Error::class,
-                Stats1::class,
-                ToastNotification::class,
-                TextInput::class,
-                NumberInput::class,
-                UpsertForm::class,
-                TextAreaInput::class,
-                DateInput::class,
-                FileInput::class,
-                DatatableTable::class,
-                SelectInput::class,
-                Form::class,
-                Checkbox1::class,
-            )
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasAssets()
-            ->hasMigration('create_vao-core_table')
-            ->hasCommand(VaoCoreCommand::class);
+        $package->name('vao-core');
 
     }
 }
